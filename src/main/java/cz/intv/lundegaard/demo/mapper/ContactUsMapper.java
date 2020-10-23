@@ -21,6 +21,8 @@ public interface ContactUsMapper {
 
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "requestType", ignore = true)
+    @Mapping(target = "createdAt", ignore = true)
+    @Mapping(target = "updatedAt", ignore = true)
     ContactUs toContactUs(CreateContactUsDto requestTypeDto);
 
     @Mapping(source = "requestType.id",target = "requestTypeId")

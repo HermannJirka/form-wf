@@ -17,11 +17,17 @@ public interface RequestTypeMapper {
     RequestTypeMapper MAPPER = Mappers.getMapper(RequestTypeMapper.class);
 
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "createdAt", ignore = true)
+    @Mapping(target = "updatedAt", ignore = true)
+    @Mapping(target = "contactUsList", ignore = true)
     RequestType toRequestType(CreateRequestTypeDto requestTypeDto);
 
     RequestTypeDto toRequestTypeDto(RequestType requestType);
 
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "createdAt", ignore = true)
+    @Mapping(target = "updatedAt", ignore = true)
+    @Mapping(target = "contactUsList", ignore = true)
     RequestType updateRequestType(@MappingTarget RequestType requestType,
                                   UpdateRequestTypeDto updateRequestTypeDto);
 }
