@@ -12,13 +12,13 @@ import javax.validation.constraints.Size;
 public class CreateContactUsDto {
     @NotBlank
     @Size(min = 1, max = 50)
-    @Pattern(regexp="^[a-zA-Z]+$", message = "Invalid Input")
+    @Pattern(regexp = "^[a-zA-Z]+$", message = "Invalid Input")
     String name;
     @NotBlank
-    @Pattern(regexp="^[a-zA-Z]+$", message = "Invalid Input")
+    @Pattern(regexp = "^[a-zA-Z]+$", message = "Invalid Input")
     @Size(min = 1, max = 50)
     String surname;
-    @Pattern(regexp="^[a-zA-Z0-9]+$", message = "Invalid Input")
+    @Pattern(regexp = "^[a-zA-Z0-9]+$", message = "Invalid Input")
     @Size(min = 1, max = 50)
     String policyNumber;
     @NotBlank

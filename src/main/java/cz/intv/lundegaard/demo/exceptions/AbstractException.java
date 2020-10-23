@@ -3,7 +3,7 @@ package cz.intv.lundegaard.demo.exceptions;
 public class AbstractException extends RuntimeException {
     private String description;
 
-    public AbstractException(String message){
+    public AbstractException(String message) {
         super(message);
     }
 

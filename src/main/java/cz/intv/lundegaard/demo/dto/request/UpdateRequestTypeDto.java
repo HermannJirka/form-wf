@@ -12,7 +12,7 @@ import javax.validation.constraints.Size;
 public class UpdateRequestTypeDto {
     @NotBlank
     @Size(min = 1, max = 50)
-    @Pattern(regexp="^[a-zA-Z\\s]+$", message = "Invalid Input")
+    @Pattern(regexp = "^[a-zA-Z\\s]+$", message = "Invalid Input")
     String name;
     @NotBlank
     @Size(min = 1, max = 1000)
